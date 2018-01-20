@@ -1,0 +1,43 @@
+#include<iostream.h>
+#include<conio.h>
+
+
+
+void fn(int a[],int b[],int n)
+{
+int cups=0,saucers=0,n1=0,n2=0, shelves=0;
+
+for(int i=0;i<3;i++)
+{
+cups+=a[i];
+saucers+=b[i];
+}
+
+if(cups%5==0)
+n1 = cups/5;
+else n1 = (cups/5)+1;
+
+if(saucers%10==0)
+n2 = saucers;
+else n2 = (saucers/10)+1;
+
+shelves = n1+n2;
+
+cout<<"\n Shelves required = "<<shelves;
+cout<<"\n Shelves available = "<<n;
+if(shelves<=n)
+cout<<"\n Arrangement is possible.";
+else cout<<"\n Arrangement is impossible.";
+
+}
+
+
+
+void main()
+{
+int a[]= {3,8,5},b[]={5,9,2},n=3;
+
+fn(a,b,n);
+
+getch();
+}

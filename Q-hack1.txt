@@ -1,0 +1,8 @@
+Find if neat arrangement of cups and shelves can be made?
+
+Given three different types of cups (a[]) and saucers (b[]), and n number of shelves, find if neat arrangement of cups and shelves can be made.
+Arrangement of the cups and saucers will be neat if it follows the below rules:
+
+1. No shelf can contain both cups and saucers
+2. There can be no more than 5 cups in any shelf
+3. There can be no more than 10 saucers in any shelf
